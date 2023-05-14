@@ -1,10 +1,20 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+
+* {
+  margin: 0 auto;
+  border: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --font-roboto: "Roboto Slab", serif;
+  --font-raleway: "Raleway", sans-serif;
+}
+
+body {
+  font-family: var(--font-roboto);
+  background-color:rgb(244, 247, 248);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -12,22 +22,188 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header
+{
+  width:35%;
+  height:60vh;
+  background-image: url('Contact2-removebg-preview.png');
+}
+.menu
+{
+  list-style: none;
+  color:#fff;
+  display:flex;
+  width:100%;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #61dafb;
+}
+img
+{
+  width:10%;
+}
+.menu-element
+{
+  width:85%;
+  list-style: none;
+  display:flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  font-weight:bold;
+}
+.element
+{
+  width: auto;
+}
+.photo-header
+{
+  padding: 15vw 75px;
+  width: 150vh;
+  height: 60vh;
+  
+}
+.comment
+{
+  height:10vw;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 30px;
+  padding-top:60px;
+  width:15%;
+  background: rgb(4,192,173);
+  background: linear-gradient(90deg, rgba(4,192,173,1) 72%, rgba(4,177,189,1) 76%, rgba(4,155,214,1) 82%, rgba(0,255,165,1) 100%);
+  border-radius: 50px;
+  font-size: 15px;
+  color:#fff;
+}
+/*color: #61dafb;*/
+fieldset
+{
+  width:45%;
+  height:70vh;
+  background-color: rgb(58, 109, 130);
+  border-radius: 10px;
+  margin-bottom: 60px;
+}
+.formulaire
+{
+  
+  width:100%;
+  height:60vh;
+  padding:40px 0px;
+  
+}
+.form
+{
+  margin: 25px 130px;
+  width: 60vh;
+  height:65vh;
+  color:#fff;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+}
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+input
+{
+  height:45px;
+  width:25vw;
+  border-radius: 5px;
+  border:1px solid rgb(70, 114, 164)
+}
+textarea
+{
+  border-radius: 5px;
+}
+#send
+{
+  width:120px;
+  height: 40px;
+  background-color: bisque;
+  margin-left: 100px;
+  font-weight: bold;
+}
+.footer
+{
+  width:100%;
+  height:12vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #61dafb;
+  color: #fff;
+  bottom: 0;
+}
+.foot
+{
+  width:80%;
+  height:70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
+  margin:0px auto;
+  margin-top:5px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.foot-in
+{
+  width:30%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+ 
+}
+.foot-in span
+{
+  text-align: left;
+}
+.a3 a
+{
+  text-decoration: none;
+  color:#fff;
+}
+.a4
+{
+  margin-bottom: 15px;
+}
+.foot-in span:hover
+{
+  font-size:10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.social-media
+{
+  height: 17%;
+  width:25%;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.copyright
+{
+  width:100%;
+  height:1%;
+  text-align: center;
+  font-weight:bold;
+  color:rgb(15, 21, 31);
+  font-size: 13px;
+  display:flex; 
+  justify-content: space-evenly;
+
 }
 
-.App-link {
-  color: #61dafb;
+.social-media img
+{
+  height:35px;
+  width:20px;
 }
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
